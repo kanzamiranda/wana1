@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: sans-serif;
+}
+#home{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 4em;
+}
+.container-carrosel-imgs{
+    width: 100%;
+    height:100%;
+    background-color: rgb(53, 53, 53);
+}
+header{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 55, 0);
+    padding: 1em 0;
+    color: white;
+}
+header h2{
+    font-size: 1em;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.708);
+}
+
+menu{
+    width: 100%;
+    height: 3em;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+menu ul li{
+    list-style: none;
+}
+menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#sobre{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 270px 270px;
+    gap: 2em;
+    padding: 1em 5em;
+}
+#sobre p{
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 1em;
+    font-weight: 500;
+}
+#sobre .img{
+    background-color: gray;
+    border-radius: 0.5em;
+}
+#produtos{
+    width: 100%;
+    height: fit-content;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+#produtos h1{
+    font-size: 1.5em;
+}
+#produtos h2{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.562);
+}
+#produtos .container-imgs{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    
+    gap: 1em;
+    width: 100%;
+    margin-top: 1em;
+}
+#produtos .container-img{
+    background-color: rgb(24, 24, 24);     
+    
+    position: relative;
+    border-radius: 0.5em; 
+    display: flex;
+    justify-content: center; 
+}
+#produtos .container-img:hover > button{
+
+    display: flex;
+}
+#produtos .container-img button{
+    transition: 3s;
+    display: none;
+    position: absolute;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background-color: rgb(255, 55, 0);
+    border: none;
+    color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.562);
+    bottom: 2em;
+    cursor: pointer;
+}
+
+#depoimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 4em;
+}
+#depoimento h3{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+#depoimento .container-card-depoimento{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 200px;
+    gap: 1em;
+}
+.cards-depoimento{
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.5em;
+    padding: 1em;
+}
+.content-top-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+.content-top-elements h2{
+    font-size: 0.8em;
+}
+.content-depoimento{
+    text-align: justify;
+}
+.nome-depoimento{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#depoimento form{
+    width: 100%;
+    height: fit-content;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 55, 0);
+    color: white;
+    margin-top: 3em;
+    position: relative;
+}
+
+#depoimento form h1{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+#depoimento form h2{
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.708);
+    margin-bottom: 2em;
+}
+
+#depoimento form input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    border-radius: 0.5em;
+}
+#depoimento form textarea{
+    width: 400px;
+    height: 150px;
+    border: none;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    resize: none;
+}
+.lenth-text-area{
+    position: absolute;
+    bottom: 8em;
+    right: 34.6%;
+    z-index: 120;
+    color: gray;
+    font-size: 0.6em;
+}
+#depoimento form button{
+    padding: 0.5em 1em;
+    border: none;
+    background-color: white;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#contatos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+#contatos h1{
+    margin-bottom: 1em;
+}
+
+#contatos form{
+    display: flex;
+    flex-direction: column;
+}
+#contatos form input{
+    width: 400px;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    border-radius: 0.5em;
+}
+
+#contatos form button{
+    padding: 0.5em 1em;
+    border: none;
+    background-color: rgb(255, 55, 0);
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+}
